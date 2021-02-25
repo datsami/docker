@@ -16,3 +16,12 @@
         sudo docker-compose build
         sudo docker-compose up -d
         ```
+    - sample webservice 2:
+        ```
+        mkdir example2
+        cd example2
+        sudo nano docker-compose.yml
+        sudo nano index.html
+        sudo docker-compose build
+        sudo docker-compose up -d
+        ```
