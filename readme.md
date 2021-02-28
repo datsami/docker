@@ -29,3 +29,6 @@
         ```
         docker ps -a
         ```
+## minimal-reverse-proxy-demo:
+    - ref: Docker and Nginx Reverse Proxy: https://youtu.be/hxngRDmHTM0
+    - code: https://github.com/productive-dev/minimal-reverse-proxy-demo
