@@ -39,3 +39,19 @@
         ```
         docker build --tag hello-world .
         ```
+## custom_image:
+    - cont:
+        ```
+        docker build -t getting-started .
+        docker images
+        docker run -dp 3000:80 getting-started
+        docker ps -a
+        ```
+    - access: http://localhost:3000
+
+## laravel nginx mysql 
+    - ref: https://www.digitalocean.com/community/tutorials/how-to-set-up-laravel-nginx-and-mysql-with-docker-compose
+    - cont:
+        ```
+        git clone https://github.com/laravel/laravel.git laravel-app
+        ```
