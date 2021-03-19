@@ -49,7 +49,7 @@
         ```
     - access: http://localhost:3000
 
-## laravel nginx mysql 
+## laravel nginx mysql: problem with php version at ubuntu 20.04
     - ref: https://www.digitalocean.com/community/tutorials/how-to-set-up-laravel-nginx-and-mysql-with-docker-compose
     - cont:
         ```
