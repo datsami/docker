@@ -43,3 +43,39 @@
         ```
         docker build --tag hello-world .
         ```
+## custom_image:
+    - cont:
+        ```
+        docker build -t getting-started .
+        docker images
+        docker run -dp 3000:80 getting-started
+        docker ps -a
+        ```
+    - access: http://localhost:3000
+
+## laravel nginx mysql: problem with php version at ubuntu 20.04
+    - ref: https://www.digitalocean.com/community/tutorials/how-to-set-up-laravel-nginx-and-mysql-with-docker-compose
+    - cont:
+        ```
+        git clone https://github.com/laravel/laravel.git laravel-app
+        ```
+## minimal-reverse-proxy-demo:
+    - ref: Docker and Nginx Reverse Proxy: https://youtu.be/hxngRDmHTM0
+    - code: https://github.com/productive-dev/minimal-reverse-proxy-demo
+
+## docker container: mongodb
+    - ref: Getting Started with MongoDB as a Docker Container Deployment: https://youtu.be/D5Q5WhGT0w8
+    - cont:
+        ```
+        docker pull mongo || docker pull mongo:4.0.4
+        docker images
+        docker run --name mongodb mongo:4.0.4
+        docker run -d -p 27017-227019:27017-27019 --name mongodb mongo:4.0.4
+        docker ps -a
+        docker exec -it mongodb bash
+        ```
+    - mongo shell:
+        ```
+        show dbs
+        ```
+    
