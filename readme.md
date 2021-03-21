@@ -1,6 +1,10 @@
 ## nginx
     - ref: https://www.docker.com/blog/how-to-use-the-official-nginx-docker-image/
     - sample config:
+        ```
+        docker pull nginx
+        
+        ```
 
 ## reverse_proxy_back_front:
     - ref: https://www.docker.com/blog/how-to-use-the-official-nginx-docker-image/
