@@ -1,0 +1,25 @@
+server {
+    	listen 80;
+    	server_name phpmyadmin.local www.phpmyadmin.local;
+    	root /var/www/html/phpmyadmin;
+
+#    	error_log /var/www/html/phpmyadmin/logs/error.log;
+#	access_log /var/www/html/phpmyadmin/logs/access.log;
+
+	index index.php index.html index.htm;
+
+    	location / {
+        	try_files $uri $uri/ =404;
+    	}
+
+    	location ~ \.php$ {
+        	include snippets/fastcgi-php.conf;
+        	fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
+     	}
+
+    	location ~ /\.ht {
+        	deny all;
+    	}
+
+}
+
