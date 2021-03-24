@@ -81,3 +81,8 @@
         ```
         
         ```
+
+## docker container: nginx + php
+    - ref: Dockerize Web Server using NGINX and PHP-FPM: https://youtu.be/sZO_KF8FdSM
+    - cont:
+    
