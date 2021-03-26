@@ -82,7 +82,8 @@
         
         ```
 
-## docker container: nginx + php
+## docker container: nginx + php + mongodb
     - ref: Dockerize Web Server using NGINX and PHP-FPM: https://youtu.be/sZO_KF8FdSM
+    - ref: How To Run MongoDB as a Docker Container: https://www.bmc.com/blogs/mongodb-docker-container/
     - cont:
     
