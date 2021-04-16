@@ -76,8 +76,29 @@
         ```
     
 ## docker container: nginx 
-    - ref:
+    - ref: 
     - cont:
         ```
         
         ```
+
+## [snapd]
+    - ref: https://snapcraft.io/install/docker/ubuntu
+    - cont:
+    - start:
+        ```
+        docker run -it ubuntu
+        ```
+    - install snapd:
+        ```
+        sudo apt update
+        sudo apt install snapd
+        ```
+
+## [phpstorm] 
+    - ref: https://www.jetbrains.com/phpstorm/download/#section=linux
+    - cont: noworking 
+        ```
+        sudo snap install phpstorm --classic
+        ```
+    - download project: no.graphics.environment
